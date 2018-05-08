@@ -7,15 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133F30A2EBCFF49EBC2BE9D9 /* libPods-CallExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04580854CF449DC40CF1824D /* libPods-CallExtension.a */; };
 		5915E53A209C063B00D83610 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5915E539209C063B00D83610 /* AppDelegate.m */; };
 		5915E53D209C063B00D83610 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5915E53C209C063B00D83610 /* ViewController.m */; };
 		5915E540209C063B00D83610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5915E53E209C063B00D83610 /* Main.storyboard */; };
 		5915E542209C063B00D83610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5915E541209C063B00D83610 /* Assets.xcassets */; };
 		5915E545209C063B00D83610 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5915E543209C063B00D83610 /* LaunchScreen.storyboard */; };
 		5915E548209C063B00D83610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5915E547209C063B00D83610 /* main.m */; };
+		5915E556209C085100D83610 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5915E555209C085100D83610 /* CallDirectoryHandler.m */; };
+		5915E55A209C085200D83610 /* CallExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5915E552209C085100D83610 /* CallExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5996AA9F20A02BD200EA9AA7 /* YSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996AA9D20A02BD200EA9AA7 /* YSContactModel.m */; };
+		5996AC2020A0522B00EA9AA7 /* YSContactModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 5996AA9E20A02BD200EA9AA7 /* YSContactModel.h */; };
+		5996AC2120A0522B00EA9AA7 /* YSContactModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5996AA9D20A02BD200EA9AA7 /* YSContactModel.m */; };
+		5996AC5820A155B600EA9AA7 /* libPods-YSCallDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5996AC5920A155B600EA9AA7 /* libPods-YSCallDemo.a */; };
+		A1A3D9B090B138131C6100AD /* libPods-YSCallDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8901B9940E5F58EA811C1836 /* libPods-YSCallDemo.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5915E558209C085200D83610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5915E52D209C063B00D83610 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5915E551209C085100D83610;
+			remoteInfo = CallExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5915E55E209C085200D83610 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5915E55A209C085200D83610 /* CallExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5996AAA320A02C1800EA9AA7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		04580854CF449DC40CF1824D /* libPods-CallExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CallExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A87B4596AF7DD15431CAED2 /* Pods-YSCallDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSCallDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSCallDemo/Pods-YSCallDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		32BF93FE83B728A68D853FC5 /* Pods-CallExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-CallExtension/Pods-CallExtension.release.xcconfig"; sourceTree = "<group>"; };
 		5915E535209C063B00D83610 /* YSCallDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSCallDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5915E538209C063B00D83610 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5915E539209C063B00D83610 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +71,19 @@
 		5915E544209C063B00D83610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5915E546209C063B00D83610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5915E547209C063B00D83610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5915E552209C085100D83610 /* CallExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5915E554209C085100D83610 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		5915E555209C085100D83610 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		5915E557209C085100D83610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5996AA9B209FFD9A00EA9AA7 /* YSCallDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YSCallDemo.entitlements; sourceTree = "<group>"; };
+		5996AA9C20A01C7700EA9AA7 /* CallExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallExtension.entitlements; sourceTree = "<group>"; };
+		5996AA9D20A02BD200EA9AA7 /* YSContactModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSContactModel.m; sourceTree = "<group>"; };
+		5996AA9E20A02BD200EA9AA7 /* YSContactModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSContactModel.h; sourceTree = "<group>"; };
+		5996AC1720A0493C00EA9AA7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../realm-objc-3.5.0/ios/dynamic/Realm.framework"; sourceTree = "<group>"; };
+		5996AC5920A155B600EA9AA7 /* libPods-YSCallDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-YSCallDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8901B9940E5F58EA811C1836 /* libPods-YSCallDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSCallDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC660363571D0FC60F3B5C4 /* Pods-YSCallDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSCallDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSCallDemo/Pods-YSCallDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B2D01B0D5D5BBAF77B9F6C48 /* Pods-CallExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CallExtension/Pods-CallExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +91,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A3D9B090B138131C6100AD /* libPods-YSCallDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5915E54F209C085100D83610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5996AC5820A155B600EA9AA7 /* libPods-YSCallDemo.a in Frameworks */,
+				133F30A2EBCFF49EBC2BE9D9 /* libPods-CallExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				5915E537209C063B00D83610 /* YSCallDemo */,
+				5915E553209C085100D83610 /* CallExtension */,
 				5915E536209C063B00D83610 /* Products */,
+				5996AAA720A03D2800EA9AA7 /* Frameworks */,
+				6BF88A0E6D8C23929E764572 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5915E535209C063B00D83610 /* YSCallDemo.app */,
+				5915E552209C085100D83610 /* CallExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +130,13 @@
 		5915E537209C063B00D83610 /* YSCallDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5996AA9B209FFD9A00EA9AA7 /* YSCallDemo.entitlements */,
 				5915E538209C063B00D83610 /* AppDelegate.h */,
 				5915E539209C063B00D83610 /* AppDelegate.m */,
 				5915E53B209C063B00D83610 /* ViewController.h */,
 				5915E53C209C063B00D83610 /* ViewController.m */,
+				5996AA9E20A02BD200EA9AA7 /* YSContactModel.h */,
+				5996AA9D20A02BD200EA9AA7 /* YSContactModel.m */,
 				5915E53E209C063B00D83610 /* Main.storyboard */,
 				5915E541209C063B00D83610 /* Assets.xcassets */,
 				5915E543209C063B00D83610 /* LaunchScreen.storyboard */,
@@ -71,6 +146,39 @@
 			path = YSCallDemo;
 			sourceTree = "<group>";
 		};
+		5915E553209C085100D83610 /* CallExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5996AA9C20A01C7700EA9AA7 /* CallExtension.entitlements */,
+				5915E554209C085100D83610 /* CallDirectoryHandler.h */,
+				5915E555209C085100D83610 /* CallDirectoryHandler.m */,
+				5915E557209C085100D83610 /* Info.plist */,
+			);
+			path = CallExtension;
+			sourceTree = "<group>";
+		};
+		5996AAA720A03D2800EA9AA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5996AC5920A155B600EA9AA7 /* libPods-YSCallDemo.a */,
+				5996AC1720A0493C00EA9AA7 /* Realm.framework */,
+				04580854CF449DC40CF1824D /* libPods-CallExtension.a */,
+				8901B9940E5F58EA811C1836 /* libPods-YSCallDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BF88A0E6D8C23929E764572 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2D01B0D5D5BBAF77B9F6C48 /* Pods-CallExtension.debug.xcconfig */,
+				32BF93FE83B728A68D853FC5 /* Pods-CallExtension.release.xcconfig */,
+				2A87B4596AF7DD15431CAED2 /* Pods-YSCallDemo.debug.xcconfig */,
+				8CC660363571D0FC60F3B5C4 /* Pods-YSCallDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,18 +186,43 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5915E54B209C063B00D83610 /* Build configuration list for PBXNativeTarget "YSCallDemo" */;
 			buildPhases = (
+				B4E29E63D8FFDBA404F4E7F0 /* [CP] Check Pods Manifest.lock */,
 				5915E531209C063B00D83610 /* Sources */,
 				5915E532209C063B00D83610 /* Frameworks */,
 				5915E533209C063B00D83610 /* Resources */,
+				5915E55E209C085200D83610 /* Embed App Extensions */,
+				5996AAA320A02C1800EA9AA7 /* Embed Frameworks */,
+				C017F1C542A7C7CE52F54632 /* [CP] Embed Pods Frameworks */,
+				0657824D5CBB2A2403DD4E45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5915E559209C085200D83610 /* PBXTargetDependency */,
 			);
 			name = YSCallDemo;
 			productName = YSCallDemo;
 			productReference = 5915E535209C063B00D83610 /* YSCallDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5915E551209C085100D83610 /* CallExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5915E55D209C085200D83610 /* Build configuration list for PBXNativeTarget "CallExtension" */;
+			buildPhases = (
+				5CAF9887568231B691247D30 /* [CP] Check Pods Manifest.lock */,
+				5915E54E209C085100D83610 /* Sources */,
+				5915E54F209C085100D83610 /* Frameworks */,
+				5915E550209C085100D83610 /* Resources */,
+				4EA24F464DD079CAE5D96DA3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallExtension;
+			productName = CallExtension;
+			productReference = 5915E552209C085100D83610 /* CallExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,6 +236,26 @@
 					5915E534209C063B00D83610 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					5915E551209C085100D83610 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -120,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				5915E534209C063B00D83610 /* YSCallDemo */,
+				5915E551209C085100D83610 /* CallExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -135,20 +289,130 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5915E550209C085100D83610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0657824D5CBB2A2403DD4E45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSCallDemo/Pods-YSCallDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EA24F464DD079CAE5D96DA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CallExtension/Pods-CallExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CAF9887568231B691247D30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CallExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4E29E63D8FFDBA404F4E7F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YSCallDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C017F1C542A7C7CE52F54632 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSCallDemo/Pods-YSCallDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5915E531209C063B00D83610 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5996AA9F20A02BD200EA9AA7 /* YSContactModel.m in Sources */,
 				5915E53D209C063B00D83610 /* ViewController.m in Sources */,
 				5915E548209C063B00D83610 /* main.m in Sources */,
 				5915E53A209C063B00D83610 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5915E54E209C085100D83610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5996AC2020A0522B00EA9AA7 /* YSContactModel.h in Sources */,
+				5996AC2120A0522B00EA9AA7 /* YSContactModel.m in Sources */,
+				5915E556209C085100D83610 /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5915E559209C085200D83610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5915E551209C085100D83610 /* CallExtension */;
+			targetProxy = 5915E558209C085200D83610 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5915E53E209C063B00D83610 /* Main.storyboard */ = {
@@ -276,9 +540,17 @@
 		};
 		5915E54C209C063B00D83610 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A87B4596AF7DD15431CAED2 /* Pods-YSCallDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YSCallDemo/YSCallDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3D5L633Z9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YSCallDemo",
+				);
 				INFOPLIST_FILE = YSCallDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yasuo.YSCallDemo;
@@ -289,13 +561,63 @@
 		};
 		5915E54D209C063B00D83610 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC660363571D0FC60F3B5C4 /* Pods-YSCallDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YSCallDemo/YSCallDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3D5L633Z9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/YSCallDemo",
+				);
 				INFOPLIST_FILE = YSCallDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yasuo.YSCallDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5915E55B209C085200D83610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A87B4596AF7DD15431CAED2 /* Pods-YSCallDemo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallExtension/CallExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3D5L633Z9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CallExtension",
+				);
+				INFOPLIST_FILE = CallExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yasuo.YSCallDemo.CallExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5915E55C209C085200D83610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC660363571D0FC60F3B5C4 /* Pods-YSCallDemo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = CallExtension/CallExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3D5L633Z9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CallExtension",
+				);
+				INFOPLIST_FILE = CallExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yasuo.YSCallDemo.CallExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -317,6 +639,15 @@
 			buildConfigurations = (
 				5915E54C209C063B00D83610 /* Debug */,
 				5915E54D209C063B00D83610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5915E55D209C085200D83610 /* Build configuration list for PBXNativeTarget "CallExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5915E55B209C085200D83610 /* Debug */,
+				5915E55C209C085200D83610 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
