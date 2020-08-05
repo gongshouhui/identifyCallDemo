@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YSHRTrainSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOO-Eu-5VI">
+                    <rect key="frame" x="15" y="15" width="39.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxa-L4-Ize" customClass="YSTagButton">
+                    <rect key="frame" x="69.5" y="10" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fw-La-oDY">
+                    <rect key="frame" x="15" y="44.5" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3S-7u-ADN">
+                    <rect key="frame" x="300" y="15" width="60" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="cI5-ri-7Oj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="详情" image="向上箭头">
+                        <color key="titleColor" red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="0.49803921568627452" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="向下箭头"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCs-K2-cdl">
+                    <rect key="frame" x="15" y="66.5" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXc-h0-4t2">
+                    <rect key="frame" x="15" y="88.5" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pCs-K2-cdl" firstAttribute="leading" secondItem="gOO-Eu-5VI" secondAttribute="leading" id="798-lB-TiO"/>
+                <constraint firstItem="8fw-La-oDY" firstAttribute="leading" secondItem="gOO-Eu-5VI" secondAttribute="leading" id="BUR-xT-98H"/>
+                <constraint firstItem="VXc-h0-4t2" firstAttribute="leading" secondItem="pCs-K2-cdl" secondAttribute="leading" id="GGR-RX-eXz"/>
+                <constraint firstItem="gOO-Eu-5VI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="Ivm-hc-h0n"/>
+                <constraint firstItem="8fw-La-oDY" firstAttribute="top" secondItem="gOO-Eu-5VI" secondAttribute="bottom" constant="10" id="JA3-Mp-YMw"/>
+                <constraint firstItem="Sxa-L4-Ize" firstAttribute="centerY" secondItem="gOO-Eu-5VI" secondAttribute="centerY" id="ZpU-j1-ngR"/>
+                <constraint firstItem="gOO-Eu-5VI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="eqb-ES-sft"/>
+                <constraint firstItem="pCs-K2-cdl" firstAttribute="top" secondItem="8fw-La-oDY" secondAttribute="bottom" constant="5" id="ggY-fl-ChF"/>
+                <constraint firstItem="Sxa-L4-Ize" firstAttribute="leading" secondItem="gOO-Eu-5VI" secondAttribute="trailing" constant="15" id="wyY-fR-1Fp"/>
+                <constraint firstItem="VXc-h0-4t2" firstAttribute="top" secondItem="pCs-K2-cdl" secondAttribute="bottom" constant="5" id="x9o-Oo-Sbg"/>
+                <constraint firstItem="z3S-7u-ADN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="zD2-CH-jLa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z3S-7u-ADN" secondAttribute="trailing" constant="15" id="zZg-7w-5hp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="arrowButton" destination="z3S-7u-ADN" id="wm3-9b-60m"/>
+                <outlet property="classTypeLb" destination="VXc-h0-4t2" id="ZWi-N0-8jK"/>
+                <outlet property="tagButton" destination="Sxa-L4-Ize" id="T4A-uh-f6P"/>
+                <outlet property="teacherLb" destination="8fw-La-oDY" id="SAP-wc-26e"/>
+                <outlet property="timeLb" destination="pCs-K2-cdl" id="dKl-8g-3Hr"/>
+                <outlet property="titleLb" destination="gOO-Eu-5VI" id="det-Mg-IwJ"/>
+            </connections>
+            <point key="canvasLocation" x="-87.200000000000003" y="-132.23388305847078"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="向上箭头" width="14" height="8"/>
+        <image name="向下箭头" width="14" height="8"/>
+    </resources>
+</document>

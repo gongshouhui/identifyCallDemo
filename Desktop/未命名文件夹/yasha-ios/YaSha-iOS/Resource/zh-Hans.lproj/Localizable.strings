@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  YaSha-iOS
+
+  Created by 方鹏俊 on 2017/8/30.
+
+*/
+
+"sZYFilterReset" = "重置";
+"sZYFilterCommit" = "确定";

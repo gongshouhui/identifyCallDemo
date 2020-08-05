@@ -1,0 +1,23 @@
+//
+//  YSHRCircleView.h
+//  YaSha-iOS
+//
+//  Created by YaSha_Tom on 2019/1/8.
+//  Copyright © 2019年 亚厦装饰股份有限公司. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface YSHRCircleView : UIView
+@property(assign,nonatomic)CGFloat startValue;
+@property(assign,nonatomic)CGFloat lineWidth;
+@property(assign,nonatomic)CGFloat value;
+@property(strong,nonatomic)UIColor *strokeColor;
+@property(strong,nonatomic)UIColor *lineColr;
+@property(assign,nonatomic)CGFloat strokeStart;
+@property(assign,nonatomic)CGFloat strokeEnd;
+@end
+
+NS_ASSUME_NONNULL_END

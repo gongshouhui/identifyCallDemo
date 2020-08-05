@@ -1,0 +1,143 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'YaSha-iOS' do
+    platform :ios, '9.0'
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for YaSha-iOS
+  
+  # 基于AFNetworking的封装
+  pod 'AFNetworking'
+  # 高性能 iOS 缓存框架
+  pod 'YYCache'
+  
+  # 导航栏
+  pod 'RTRootNavigationController'
+  # 低耦合集成TabBarController
+  pod 'CYLTabBarController'
+  # 页面切换控制器
+  pod 'WMPageController'
+  # 函数响应式编程框架
+  pod 'ReactiveCocoa', '~>2.5.0'
+  # 全局侧滑
+  pod 'FDFullscreenPopGesture', '1.1'
+  # Realm
+  #pod 'Realm'
+  pod 'Realm'
+  # 显示FPS
+  pod 'JPFPSStatus'
+  # 保护APP不闪退
+  ##pod 'JJException'
+  
+  # 新特性页
+  pod 'KSGuaidView'
+  # 轻量级的布局框架
+  pod 'Masonry'
+  # 刷新框架
+  pod 'MJRefresh'
+  # 无限循环图片、文字轮播器
+  pod 'SDCycleScrollView'
+  # 空TableView占位视图
+  pod 'CYLTableViewPlaceHolder'
+  # 富文本编辑与显示框架
+  pod 'YYText'
+  # UITableViewCell高度计算组件
+  pod 'UITableView+FDTemplateLayoutCell'
+  # 键盘自适应组件
+  pod 'IQKeyboardManager'
+  # TableViewCell滑动菜单
+  pod 'SWTableViewCell'
+  # 倒计时组件
+   pod 'JKCountDownButton'
+  # 选择器
+  pod 'ActionSheetPicker-3.0'
+  # 轻量级条形码扫描库
+  pod 'MTBBarcodeScanner'
+  # 照片选择器
+  pod 'ZYQAssetPickerController',  '~> 1.2.0'
+  # 时间选择器
+  pod 'FTPickerView'
+  # 侧边栏条件筛选器
+  pod 'ZYSideSlipFilter'
+  # QMUI
+  pod 'QMUIKit', '2.3.0'
+  # 时间选择器
+  pod 'PGDatePicker', '1.5.12'
+  pod 'PGPickerView', '1.3.3'
+  # 通讯录联系人封装
+  pod 'PPGetAddressBook'
+  # 通讯录组件
+  pod 'SCIndexView','2.1.0'
+
+  # 日期工具库
+  pod 'DateTools'
+  # 日历组件
+  pod 'FSCalendar'
+  # 字典转模型组件
+  pod 'YYModel'
+  # JWT
+  pod 'JWT'
+
+  # 融云
+#  pod 'RongCloudIM'
+#pod 'RongCloudIM', '2.8.32'
+  # 极光推送
+  pod 'JPush', '3.0.7'
+  # 腾讯崩溃日志分析
+  pod 'Bugly'
+  # 微信分享组件
+  pod 'WechatOpenSDK'
+  # 弹出菜单栏
+  pod 'YBPopupMenu'
+  
+  pod 'GTMBase64'
+
+  # JSPatch
+  pod 'JSPatchPlatform'
+  #数据为空时类型不确定时保护
+  pod 'NullSafe'
+  
+  # AMap
+  pod 'AMapLocation'
+
+  #图形库
+  pod 'PNChart'
+#解压缩，解压缩
+  pod 'SSZipArchive'
+#  #客服机器人
+  #pod 'QIYU_iOS_SDK','4.9.0'
+ 
+  pod 'KVOController'
+
+ pod 'React', :path => './YaSha-iOS/react-native/node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge', # 如果RN版本 >= 0.47则加入此行
+    'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
+    'RCTText',
+    'RCTImage',
+    'RCTNetwork',
+    'RCTLinkingIOS',
+    'RCTWebSocket', # 调试功能需要此模块
+    'RCTAnimation', # FlatList和原生动画功能需要此模块
+    # 在这里继续添加你所需要的其他RN模块
+  ]
+  # 如果你的RN版本 >= 0.42.0，则加入下面这行
+  pod 'yoga', :path => './YaSha-iOS/react-native/node_modules/react-native/ReactCommon/yoga'
+
+  # 如果RN版本 >= 0.45则加入下面三个第三方编译依赖
+  pod 'DoubleConversion', :podspec => './YaSha-iOS/react-native/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => './YaSha-iOS/react-native/node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => './YaSha-iOS/react-native/node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'RNGestureHandler', :path => './YaSha-iOS/react-native/node_modules/react-native-gesture-handler'
+pod 'BVLinearGradient', :path => './YaSha-iOS/react-native/node_modules/react-native-linear-gradient'
+
+end
+
+target 'YaSha-Call' do
+    platform :ios, '11.0'
+    
+  pod 'Realm'
+end
+

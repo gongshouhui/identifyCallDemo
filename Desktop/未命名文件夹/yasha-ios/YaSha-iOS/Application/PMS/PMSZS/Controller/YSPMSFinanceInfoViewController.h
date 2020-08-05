@@ -1,0 +1,16 @@
+//
+//  YSPMSFinanceInfoViewController.h
+//  YaSha-iOS
+//
+//  Created by YaSha_Tom on 2018/1/29.
+//  Copyright © 2018年 亚厦装饰股份有限公司. All rights reserved.
+//
+
+#import "YSCommonListViewController.h"
+@class YSPMSInfoHeaderView;
+
+@interface YSPMSFinanceInfoViewController : YSCommonListViewController
+@property (nonatomic,strong) YSPMSInfoHeaderView *infoHeaderView;
+@property (nonatomic,strong) NSString *projectId;
+
+@end

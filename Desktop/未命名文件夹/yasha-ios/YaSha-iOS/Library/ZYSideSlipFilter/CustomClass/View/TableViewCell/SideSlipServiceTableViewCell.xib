@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideSlipServiceTableViewCell" id="KGk-i7-Jjw" customClass="SideSlipServiceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="900" horizontalCompressionResistancePriority="800" text="配送服务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4T-vf-EB5">
+                        <rect key="frame" x="10" y="32" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXV-n6-pjg">
+                        <rect key="frame" x="78.5" y="26.5" width="231.5" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title=" 广东省广州市天河区某某街道某某小区某某栋" image="contact_pick_location">
+                            <color key="titleColor" red="0.95294117647058818" green="0.3529411764705882" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="clickAddressButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vvb-iI-dSm"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-YQ-o97">
+                        <rect key="frame" x="0.0" y="58" width="320" height="53.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="900" constant="53" id="tAo-Qm-9ep"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rYF-a6-PSK">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="xSe-YQ-o97" secondAttribute="bottom" id="2ZZ-FL-2wL"/>
+                    <constraint firstItem="xSe-YQ-o97" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="FlL-DJ-tl1"/>
+                    <constraint firstItem="d4T-vf-EB5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="24" id="OVK-cP-TeS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xSe-YQ-o97" secondAttribute="trailing" constant="-8" id="P3K-rG-Fry"/>
+                    <constraint firstItem="d4T-vf-EB5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="bdp-k5-aeC"/>
+                    <constraint firstItem="xSe-YQ-o97" firstAttribute="top" secondItem="d4T-vf-EB5" secondAttribute="bottom" constant="10" id="koV-2I-svz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CXV-n6-pjg" secondAttribute="trailing" constant="2" id="n2G-9M-hxi"/>
+                    <constraint firstItem="CXV-n6-pjg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="d4T-vf-EB5" secondAttribute="trailing" constant="15" id="oDM-Uv-crH"/>
+                    <constraint firstItem="CXV-n6-pjg" firstAttribute="centerY" secondItem="d4T-vf-EB5" secondAttribute="centerY" id="sjX-Q9-yXe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressButton" destination="CXV-n6-pjg" id="J68-jw-Lbt"/>
+                <outlet property="collectionViewHeightConstraint" destination="tAo-Qm-9ep" id="SLf-x5-ogt"/>
+                <outlet property="mainCollectionView" destination="xSe-YQ-o97" id="YHr-8u-Jkz"/>
+                <outlet property="titleLabel" destination="d4T-vf-EB5" id="1Ts-jj-KXN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="contact_pick_location" width="20" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideSlipPriceTableViewCell" id="KGk-i7-Jjw" customClass="SideSlipPriceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="价格区间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CV-En-q6B">
+                        <rect key="frame" x="10" y="12" width="52" height="12.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="最低价" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B1V-vE-T1h">
+                        <rect key="frame" x="10" y="39.5" width="134.5" height="24"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="70a-dz-G7c"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="最高价" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVg-H1-PUA">
+                        <rect key="frame" x="175.5" y="39.5" width="134.5" height="24"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd7-IQ-bEL">
+                        <rect key="frame" x="146.5" y="39.5" width="27" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                        <color key="textColor" red="0.5296475887298584" green="0.52963173389434814" blue="0.52964073419570923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OVg-H1-PUA" firstAttribute="leading" secondItem="qd7-IQ-bEL" secondAttribute="trailing" constant="2" id="FCv-pv-1Vr"/>
+                    <constraint firstItem="OVg-H1-PUA" firstAttribute="height" secondItem="B1V-vE-T1h" secondAttribute="height" id="IQj-Ml-iqp"/>
+                    <constraint firstItem="OVg-H1-PUA" firstAttribute="width" secondItem="B1V-vE-T1h" secondAttribute="width" id="Kvu-E2-YH3"/>
+                    <constraint firstItem="OVg-H1-PUA" firstAttribute="top" secondItem="B1V-vE-T1h" secondAttribute="top" id="a4h-4s-7tB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="B1V-vE-T1h" secondAttribute="bottom" constant="8" id="fVt-OG-uhd"/>
+                    <constraint firstItem="qd7-IQ-bEL" firstAttribute="leading" secondItem="B1V-vE-T1h" secondAttribute="trailing" constant="2" id="gcu-Wk-f8h"/>
+                    <constraint firstItem="3CV-En-q6B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="hP9-Xl-xPe"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OVg-H1-PUA" secondAttribute="trailing" constant="2" id="j2r-Er-HfP"/>
+                    <constraint firstItem="qd7-IQ-bEL" firstAttribute="centerY" secondItem="B1V-vE-T1h" secondAttribute="centerY" id="ldE-Wy-erX"/>
+                    <constraint firstItem="3CV-En-q6B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="qqY-7A-XgM"/>
+                    <constraint firstItem="B1V-vE-T1h" firstAttribute="top" secondItem="3CV-En-q6B" secondAttribute="bottom" constant="15" id="sxk-ny-QL2"/>
+                    <constraint firstItem="B1V-vE-T1h" firstAttribute="leading" secondItem="3CV-En-q6B" secondAttribute="leading" id="ugE-ME-b96"/>
+                    <constraint firstItem="B1V-vE-T1h" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.42" id="wgS-Hf-csH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="maxTextField" destination="OVg-H1-PUA" id="TRl-EG-hWN"/>
+                <outlet property="minTextField" destination="B1V-vE-T1h" id="guG-9h-YPS"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

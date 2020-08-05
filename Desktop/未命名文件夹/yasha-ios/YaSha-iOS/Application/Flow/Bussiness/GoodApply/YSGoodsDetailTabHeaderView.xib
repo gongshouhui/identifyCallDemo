@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YSGoodsDetailTabHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-nP-VAo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2L-8l-t10">
+                            <rect key="frame" x="15" y="8" width="33" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.098039215686274508" green="0.12156862745098039" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="y2L-8l-t10" firstAttribute="leading" secondItem="Fgc-nP-VAo" secondAttribute="leading" constant="15" id="BRp-KA-lqE"/>
+                        <constraint firstAttribute="height" constant="32" id="k7P-bC-Fgx"/>
+                        <constraint firstItem="y2L-8l-t10" firstAttribute="centerY" secondItem="Fgc-nP-VAo" secondAttribute="centerY" id="mOZ-3i-Omd"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-清单" translatesAutoresizingMaskIntoConstraints="NO" id="p2p-io-TJ3">
+                    <rect key="frame" x="15" y="47" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="ggU-aF-SPc"/>
+                        <constraint firstAttribute="height" constant="16" id="pTe-Dj-zcw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工地物资合计(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aic-q4-JAp">
+                    <rect key="frame" x="36" y="45" width="126" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.066666666666666666" green="0.10196078431372549" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCk-g7-x7x">
+                    <rect key="frame" x="329" y="48" width="31" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.97254901960784312" green="0.32941176470588235" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22d-WV-2CC">
+                    <rect key="frame" x="15" y="80" width="345" height="1"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KPA-BA-Shn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JCk-g7-x7x" secondAttribute="trailing" constant="15" id="2Sh-Br-ged"/>
+                <constraint firstItem="p2p-io-TJ3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="32D-HR-re8"/>
+                <constraint firstItem="22d-WV-2CC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="8E2-HR-ZOR"/>
+                <constraint firstItem="p2p-io-TJ3" firstAttribute="top" secondItem="Fgc-nP-VAo" secondAttribute="bottom" constant="15" id="8oc-dp-mRF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="22d-WV-2CC" secondAttribute="trailing" constant="15" id="Cdp-j6-bHU"/>
+                <constraint firstItem="aic-q4-JAp" firstAttribute="leading" secondItem="p2p-io-TJ3" secondAttribute="trailing" constant="5" id="RhR-wg-YmZ"/>
+                <constraint firstItem="aic-q4-JAp" firstAttribute="centerY" secondItem="p2p-io-TJ3" secondAttribute="centerY" id="b9o-kV-LP9"/>
+                <constraint firstItem="Fgc-nP-VAo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cTi-mq-Gav"/>
+                <constraint firstItem="JCk-g7-x7x" firstAttribute="centerY" secondItem="aic-q4-JAp" secondAttribute="centerY" id="dQz-ix-KhW"/>
+                <constraint firstItem="Fgc-nP-VAo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hnl-2b-fml"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fgc-nP-VAo" secondAttribute="trailing" id="rZG-3c-TuQ"/>
+                <constraint firstItem="22d-WV-2CC" firstAttribute="top" secondItem="aic-q4-JAp" secondAttribute="bottom" constant="15" id="vnX-4W-2zX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="totalLb" destination="y2L-8l-t10" id="vOv-05-CDW"/>
+                <outlet property="totalPriceLb" destination="JCk-g7-x7x" id="WBl-9c-PXW"/>
+            </connections>
+            <point key="canvasLocation" x="168.80000000000001" y="-210.49475262368819"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-清单" width="20" height="20"/>
+    </resources>
+</document>

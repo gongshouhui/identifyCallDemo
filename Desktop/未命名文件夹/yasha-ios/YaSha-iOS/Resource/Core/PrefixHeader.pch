@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//  YaSha-iOS
+//
+//  Created by 方鹏俊 on 2017/12/6.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// DLog
+#ifdef DEBUG
+//#define DLog(...);
+//可能会被block捕获self
+#define DLog(format, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+#else
+//#define DLog(...);
+#define DLog(format, ...) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String] )
+#endif
+
+// 仅在 IOS 系统上支持 SO_NOSIGPIPE
+#if defined(SO_NOSIGPIPE) && !defined(MSG_NOSIGNAL)
+// We do not want SIGPIPE if writing to socket.
+const int value = 1;
+setsockopt(fd, SOL_SOCKET, SO_NOSIGPIPE, &value, sizeof(int));
+#endif
+
+// 强、弱引用
+#define YSStrong  __strong __typeof(self) strongSelf = weakSelf
+#define YSWeak  __weak __typeof(self) weakSelf = self
+
+#define AttachmentFolderPath [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"AttachmentFolder"]
+
+#import "YSPodfile.h"
+#import "YSUICommonDefines.h"
+#import "YSFlowCommonEnum.h"
+#import "UIColor+YSHexColor.h"
+#import "UIImage+YSImage.h"
+#endif /* PrefixHeader_pch */
+
